@@ -73,9 +73,7 @@ class MainWidget(QWidget):
 
         grub_vbox.addWidget(grub_reboot_btn,alignment=Qt.AlignmentFlag.AlignLeft)
         grub_vbox.addWidget(self.tree)
-
-        self.setFixedSize(450,350)
-        self.setWindowTitle("Reboot to specific OS")
+        
         grub_widget.setLayout(grub_vbox)
 
         efi_vbox = QVBoxLayout()
@@ -95,6 +93,9 @@ class MainWidget(QWidget):
         boot_tab.addTab(efi_widget,"EFI")
 
         main_layout.addWidget(boot_tab)
+        
+        self.setFixedSize(450,350)
+        self.setWindowTitle("Select Boot")
         self.setLayout(main_layout)
 
 def main():
