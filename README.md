@@ -8,3 +8,8 @@
   PyQt5 >= 5.15.6
   Qt.py >= 1.3.8
 ```
+## Usage tips:
+
+The app must be run as root!
+
+
