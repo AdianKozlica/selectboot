@@ -2,8 +2,13 @@
 
 from entries import efi_entries,grub_entries
 from models import qjsonmodel
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore import *
+
+from PyQt5.QtWidgets import (QApplication,QVBoxLayout,
+                             QTabWidget,QWidget,
+                             QPushButton,QTreeView,
+                             QListWidget)
+
+from PyQt5.QtCore import Qt,QModelIndex
 
 import os
 import sys
