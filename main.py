@@ -2,6 +2,7 @@
 
 from entries import efi_entries,grub_entries
 from models import qjsonmodel
+from sys import exit
 
 from PyQt5.QtWidgets import (QApplication,QVBoxLayout,
                              QTabWidget,QWidget,
