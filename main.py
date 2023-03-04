@@ -2,7 +2,6 @@
 
 from entries import efi_entries,grub_entries
 from models import qjsonmodel
-from sys import exit
 
 from PyQt5.QtWidgets import (QApplication,QVBoxLayout,
                              QTabWidget,QWidget,
@@ -115,6 +114,6 @@ def main():
 if __name__ == "__main__":
     if os.getuid() != 0:
         sys.stderr.write("Must be root!\n")
-        exit()
+        sys.exit()
 
     main()
